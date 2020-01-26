@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <script>
+    var Module = {
+      onRuntimeInitialized: function() {
+        const a = new Module.MyClass(4, "one");
+        console.log(Module.MyClass.getStringFromInstance(a));
+        console.log(a.incrementX());
+        console.log(a.getX2());
+        console.log(a.x);
+        a.x = 10;
+        console.log(a.x);
+        a.delete();
+        // console.log(a.x);
+      }
+    };
+  </script>
+  <script src="embind_example_2.js"></script>
+</html>

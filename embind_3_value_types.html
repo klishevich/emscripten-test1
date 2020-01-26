@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <script>
+    var Module = {
+      onRuntimeInitialized: function() {
+        var person = Module.findPersonAtLocation([17.2, 156.5]);
+        console.log('Found someone! Their name is ' + person.name + ' and they are ' + person.age + ' years old');
+      }
+    };
+  </script>
+  <script src="embind_3_value_types.js"></script>
+</html>
