@@ -2,6 +2,8 @@
 
 // Run
 // emcc --bind -o embind_quick_example.js embind_quick_example.cpp
+// open http://localhost:8080/embind_quick_example.html
+// look into console
 
 #include <emscripten/bind.h>
 
