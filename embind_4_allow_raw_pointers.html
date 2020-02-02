@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <script>
+    var Module = {
+      onRuntimeInitialized: function() {
+        console.log(123);
+        const a = new Module.C();
+        console.log('a.x', a.x);
+        // ??? OBJECTS ARE NOT STRINGIFIED
+        console.log(JSON.stringify(a));
+        const b = Module.passThrough(a);
+        a.delete();
+        console.log('b.x', b.x);
+        console.log(JSON.stringify(b));
+      }
+    };
+  </script>
+  <script src="embind_4_allow_raw_pointers.js"></script>
+</html>

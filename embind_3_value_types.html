@@ -3,7 +3,8 @@
   <script>
     var Module = {
       onRuntimeInitialized: function() {
-        var person = Module.findPersonAtLocation([17.2, 156.5]);
+        var point2f = [35.2, 156.5];
+        var person = Module.findPersonAtLocation(point2f);
         console.log('Found someone! Their name is ' + person.name + ' and they are ' + person.age + ' years old');
       }
     };

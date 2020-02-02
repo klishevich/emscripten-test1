@@ -1,5 +1,5 @@
 // emcc --bind -o embind_3_value_types.js embind_3_value_types.cpp
-// open http://localhost:8080/embind_quick_example.html
+// open http://localhost:8080/embind_3_value_types.html
 
 #include <emscripten/bind.h>
 

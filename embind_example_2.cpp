@@ -1,5 +1,5 @@
 // emcc --bind -o embind_example_2.js embind_example_2.cpp
-// open http://localhost:8080/embind_quick_example.html
+// open http://localhost:8080/embind_example_2.html
 
 #include <emscripten/bind.h>
 
