@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <script>
+    var Module = {
+      onRuntimeInitialized: function() {
+        var instance = new Module.MyClass();
+        console.log(instance.someFunction());
+      }
+    };
+  </script>
+  <script src="embind_5_factory_constructors.js"></script>
+</html>
