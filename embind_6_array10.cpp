@@ -1,3 +1,4 @@
+// Non-member-functions on the JavaScript prototype
 // emcc --bind -o embind_6_array10.js embind_6_array10.cpp
 // open http://localhost:8080/embind_6_array10.html
 
