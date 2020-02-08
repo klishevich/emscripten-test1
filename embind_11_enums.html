@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <script>
+    Module = {
+      onRuntimeInitialized: function() {
+        const a = Module.OldStyle.TWO;
+        console.log('a', a);
+        const b = Module.NewStyle.ONE;
+        console.log('b', b);
+      }
+    };
+  </script>
+  <script src="embind_11_enums.js"></script>
+</html>
