@@ -13,6 +13,7 @@ public:
 };
 
 C* passThrough(C* ptr) { return ptr; }
+
 EMSCRIPTEN_BINDINGS(raw_pointers) {
     emscripten::class_<C>("C")
         .constructor()

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <script>
+    var Module = {
+      onRuntimeInitialized: function() {
+        var instance = Module.getDerivedInstance();
+        console.log(instance.test());
+      }
+    };
+  </script>
+  <script src="embind_9_base_classes_runtime_polymorphism.js"></script>
+</html>
