@@ -1,4 +1,3 @@
-// Non-member-functions on the JavaScript prototype
 // emcc --bind -o embind_9_base_classes_runtime_polymorphism.js embind_9_base_classes_runtime_polymorphism.cpp
 // open http://localhost:8080/embind_9_base_classes_runtime_polymorphism.html
 

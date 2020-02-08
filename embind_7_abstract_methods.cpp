@@ -1,4 +1,3 @@
-// Non-member-functions on the JavaScript prototype
 // emcc --bind -o embind_7_abstract_methods.js embind_7_abstract_methods.cpp
 // open http://localhost:8080/embind_7_abstract_methods.html
 

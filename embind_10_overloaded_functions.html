@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <script>
+    var Module = {
+      onRuntimeInitialized: function() {
+        var instance = new Module.HasOverloadedMethods();
+        console.log(instance.foo());
+        // console.log(instance.foo_int(10));
+        // console.log(instance.foo_float(100.1));
+        console.log(instance.foo(10));
+        console.log(instance.foo(100.1));
+      }
+    };
+  </script>
+  <script src="embind_10_overloaded_functions.js"></script>
+</html>

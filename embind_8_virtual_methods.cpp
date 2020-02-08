@@ -1,4 +1,3 @@
-// Non-member-functions on the JavaScript prototype
 // emcc --bind -o embind_8_virtual_methods.js embind_8_virtual_methods.cpp
 // open http://localhost:8080/embind_8_virtual_methods.html
 
