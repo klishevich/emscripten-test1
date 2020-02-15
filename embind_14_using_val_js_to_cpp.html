@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <script>
+      // function myFunction() {
+      //     console.log('myFunction');
+      //   // Get web audio api context
+      //   var AudioContext = window.AudioContext || window.webkitAudioContext;
+
+      //   // Got an AudioContext: Create context and OscillatorNode
+      //   var context = new AudioContext();
+      //   var oscillator = context.createOscillator();
+
+      //   // Configuring oscillator: set OscillatorNode type and frequency
+      //   oscillator.type = 'triangle';
+      //   oscillator.frequency.value = 261.63; // value in hertz - middle C
+
+      //   // Playing
+      //   oscillator.connect(context.destination);
+      //   oscillator.start();
+
+      //   // All done!
+      // }
+    Module = {
+      onRuntimeInitialized: function() {
+        document.getElementById("btn1").addEventListener("click", () => Module.play());        
+      }
+    };
+  </script>
+  <script src="embind_14_using_val_js_to_cpp.js"></script>
+  <body>
+     <h1>embind_14_using_val_js_to_cpp</h1>
+     <button id="btn1">play</button>
+     <script>
+      //  document.getElementById("btn1").addEventListener("click", myFunction);
+     </script>
+  </body>
+</html>
