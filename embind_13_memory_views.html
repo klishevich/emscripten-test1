@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <script>
+    Module = {
+      onRuntimeInitialized: function() {
+        var myUint8Array = Module.getBytes();
+        var base64string = window.btoa(myUint8Array);
+        var x = document.getElementById("myImg");
+        x.setAttribute("src", `data:image/jpeg;charset=utf-8;base64,${base64string}`);
+        // var xhr = new XMLHttpRequest();
+        // xhr.open('POST', /* ... */);
+        // xhr.open("GET", '/');
+        // xhr.send(myUint8Array);
+      }
+    };
+  </script>
+  <script src="embind_13_memory_views.js"></script>
+  <body>
+      <img id="myImg" />
+  </body>
+</html>
