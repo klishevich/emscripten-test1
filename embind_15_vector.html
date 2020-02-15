@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <script>
+    Module = {
+      onRuntimeInitialized: function() {
+        var retVector = Module['returnVectorData']();
+        console.log('1.1 retVector', retVector);
+
+        // vector size
+        var vectorSize = retVector.size();
+        console.log('1.2 vectorSize', vectorSize);
+
+        // change vector value
+        retVector.set(vectorSize - 1, 11);
+        console.log('1.3 retVector', retVector);
+
+        // add new value vector
+        retVector.push_back(12);
+        console.log('1.4 retVector', retVector);
+
+        // retrieve value from the vector
+        for (var i = 0; i < retVector.size(); i++) {
+            console.log("Vector Value: ", retVector.get(i));
+        }
+
+        // expand vector size
+        retVector.resize(20, 1);
+        console.log('1.5 vectorSize', retVector.size());
+
+        var retMap = Module['returnMapData']();
+        console.log('2.1 retMap', retMap);
+
+        // map size
+        var mapSize = retMap.size();
+        console.log('2.2 mapSize', mapSize);
+
+        // retrieve value from map
+        console.log("Map Value: ", retMap.get(10));
+
+        // figure out which map keys are available
+        // NB! You must call `register_vector<key_type>`
+        // to make vectors available
+        var mapKeys = retMap.keys();
+        for (var i = 0; i < mapKeys.size(); i++) {
+            var key = mapKeys.get(i);
+            console.log("Map key/value: ", key, retMap.get(key));
+        }
+
+        // reset the value at the given index position
+        retMap.set(10, "OtherValue");  
+        console.log('2.3 mapSize', retMap.size());  
+        console.log("2.4 Map Value: ", retMap.get(10));   
+      }
+    };
+  </script>
+  <script src="embind_15_vector.js"></script>
+  <body>
+     <h1>embind_15_vector</h1>
+  </body>
+</html>

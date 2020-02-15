@@ -30,6 +30,6 @@ void play() {
   printf("All done!\n");
 }
 
-EMSCRIPTEN_BINDINGS(my_module) {
+EMSCRIPTEN_BINDINGS(any_name) {
     function("play", &play);
 }
