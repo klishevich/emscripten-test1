@@ -29,7 +29,10 @@
           }
         };
         var interfaceObject = Module.BaseStruct.implement(x);
-        console.log(x.invoke("dddd"));
+        // x.invoke("dddd");
+        interfaceObject.invoke("it should print out, but it does not");
+        var instance2 = new DerivedClass();
+        instance2.invoke('sss2');
       }
     };
   </script>
