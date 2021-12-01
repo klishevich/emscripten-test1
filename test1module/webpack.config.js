@@ -1,6 +1,5 @@
 const path = require("path");
 const CopyPlugin = require("copy-webpack-plugin");
-const webpack = require("webpack");
 
 module.exports = {
     mode: "production",
@@ -27,7 +26,6 @@ module.exports = {
                 { from: "src/index.html", to: "" },
                 { from: "src/module_test1.wasm", to: "" },
             ]
-        }),
-        new webpack.IgnorePlugin(/(fs)/)
+        })
     ]
 };

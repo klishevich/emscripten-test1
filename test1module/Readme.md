@@ -1,5 +1,11 @@
 # Simple Example how to load wasm module build with Emscripten
 
+## Build Emscripten 
+
+* install Emscripten
+* `cd src`
+* `emcc --bind -s MODULARIZE=1 -s ENVIRONMENT=web -o module_test1.js test1.cpp`
+
 ## Running the Example
 
 * `npm install`
